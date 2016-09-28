@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using System.Diagnostics;
 
 namespace HappyBirthday
 {
@@ -12,6 +13,8 @@ namespace HappyBirthday
             act.BeginInvoke(null, null);
             CoolPrint("Никита, от лица нашего коллектива (комната 332) поздравляем тебя с Днём Рождения! Желаем крепкого здоровья, счастья. Пусть преграды, которые возникнут на твоём пути, никогда тебя не остановят и ты преодолеешь их, становясь ещё сильнее, ведь как говорится \"Что нас не убивает - делает только сильнее!\", чего мы тебе и желаем. Иди к своей мечте, оставайся таким же весёлым и классным парнем какой ты есть и никогда не меняйся. С Днём Рождения, Никита!");
             Console.ReadLine();
+            Console.WriteLine("Посмотрим код на GitHub...");
+            Process.Start("https://github.com/VladSerdobintsev/Test/blob/master/Program.cs");
         }
         static void CoolPrint(string message)
         {
